@@ -38,7 +38,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'rest_framework'
+    # third party apps
+    'rest_framework',
+
+    # project apps
+    'metrics',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,7 +56,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'metrics.urls'
+ROOT_URLCONF = 'smallslivemetrics.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'metrics.wsgi.application'
+WSGI_APPLICATION = 'smallslivemetrics.wsgi.application'
 
 
 # Database
@@ -91,9 +95,9 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+USE_I18N = False
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
 
