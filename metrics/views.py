@@ -16,7 +16,6 @@ class MetricView(generics.CreateAPIView):
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        print("staaaa")
         with transaction.atomic():
             try:
                 now = timezone.now()
@@ -24,7 +23,6 @@ class MetricView(generics.CreateAPIView):
                     media_id=serializer.validated_data.get('media_id'),
                     user_id=serializer.validated_data.get('user_id'),
                 )
-                print("nasao")
                 http_status = status.HTTP_204_NO_CONTENT
                 metric.seconds_played += 30
                 metric.last_ping = now
