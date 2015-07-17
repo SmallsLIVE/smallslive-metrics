@@ -87,6 +87,8 @@ DATABASES = {
     }
 }
 
+DATABASE_ROUTERS = ['smallslivemetrics.db_router.AuthRouter']
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
