@@ -11,3 +11,7 @@ class UserVideoMetric(models.Model):
 
     class Meta:
         unique_together = ('media_id', 'user_id', 'date')
+
+    def __str__(self):
+        return "V{0} U{1} D{2.year}/{2.month}/{2.day} C{3}".format(
+            self.media_id, self.user_id, self.date, self.seconds_played)
