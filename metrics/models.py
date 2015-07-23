@@ -23,9 +23,21 @@ class MetricsManager(models.Manager):
 
     def total_seconds_for_user(self, user_id):
         return self.get_queryset().filter(user_id=user_id).total_seconds()
-    
+
     def total_plays_for_user(self, user_id):
         return self.get_queryset().filter(user_id=user_id).total_plays()
+
+    def total_plays(self):
+        return self.get_queryset().total_plays()
+
+    def total_seconds(self):
+        return self.get_queryset().total_seconds()
+
+    def total_plays_for_month(self, month, year):
+        return self.get_queryset().filter(date__month=month, date__year=year).total_plays()
+
+    def total_seconds_for_month(self, month, year):
+        return self.get_queryset().filter(date__month=month, date__year=year).total_seconds()
 
     def date_plays_for_media(self, media_id, month, year):
         values = self.get_queryset().filter(
