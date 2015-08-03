@@ -8,4 +8,4 @@ ipython==3.2.1
 psycogreen==1.0
 psycopg2==2.6.1
 six==1.9.0
-git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@71351f2f173051e0fbcc64fa7f66ca7accce4191#egg=smallslive_metrics_app-0.1.11
+git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@4f49b2045a225db46ab69d98b338504d9b990ec8#egg=smallslive_metrics_app-0.1.14

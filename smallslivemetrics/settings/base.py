@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'y)kbz1d++90$q55@z(#f2h^p3sxwc$*p1=r)4omtm=5@8x&&4s'
+SECRET_KEY = '6h%2-8&^8z0k9awraly+&t193_kc^m&l$^i_32*9%ewz_$rvu&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,9 +42,11 @@ INSTALLED_APPS = (
     'corsheaders',
     'django_extensions',
     'rest_framework',
+    'rest_framework.authtoken',
 
     # project apps
     'metrics',
+    'metrics_users',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -91,7 +93,7 @@ DATABASES = {
 }
 
 DATABASE_ROUTERS = ['smallslivemetrics.db_router.AuthRouter']
-
+AUTH_USER_MODEL = 'metrics_users.SmallsUser'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
