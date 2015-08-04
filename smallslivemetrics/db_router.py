@@ -23,8 +23,8 @@ class AuthRouter(object):
         """
         Allow relations if a model in the auth app is involved.
         """
-        if obj1._meta.app_label  in ('auth', 'authtoken', 'metrics_users') or \
-            obj2._meta.app_label  in ('auth', 'authtoken', 'metrics_users'):
+        if obj1._meta.app_label in ('auth', 'authtoken', 'metrics_users') or \
+            obj2._meta.app_label in ('auth', 'authtoken', 'metrics_users'):
             return True
         return None
 
@@ -33,6 +33,6 @@ class AuthRouter(object):
         Make sure the auth app only appears in the 'auth_db'
         database.
         """
-        if app_label in ('auth', 'authtoken', 'metrics_users'):
+        if app_label in ('auth', 'authtoken'):
             return db == 'auth_db'
         return None
