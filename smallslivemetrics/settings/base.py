@@ -116,3 +116,5 @@ STATIC_URL = '/static/'
 
 PING_INTERVAL = 30
 DAILY_LIMIT_PER_MEDIA = 180 * 60  # in seconds
+
+SMALLSLIVE_SITE = 'http://smallslive.herokuapp.com'
