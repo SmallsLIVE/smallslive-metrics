@@ -21,4 +21,4 @@ DATABASES = {
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-SESSION_COOKIE_DOMAIN = 'localhost'
+SMALLSLIVE_SITE = 'http://localhost'
