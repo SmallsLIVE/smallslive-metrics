@@ -35,7 +35,7 @@ CORS_ORIGIN_WHITELIST = (
     'smallslive.com',
     'herokuapp.com'
 )
-
+CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = (
     'GET',
     'POST',
