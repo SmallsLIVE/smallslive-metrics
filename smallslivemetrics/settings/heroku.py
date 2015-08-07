@@ -28,3 +28,14 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# CORS headers
+CORS_ORIGIN_WHITELIST = (
+    'smallslive.com',
+    'herokuapp.com'
+)
+CORS_ALLOW_METHODS = (
+    'GET',
+    'POST',
+    'OPTIONS'
+)
