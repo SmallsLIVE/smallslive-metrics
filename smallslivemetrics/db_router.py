@@ -33,6 +33,6 @@ class AuthRouter(object):
         Make sure the auth app only appears in the 'auth_db'
         database.
         """
-        if app_label in ('auth', 'authtoken'):
+        if app_label in ('auth', 'authtoken', 'metrics_users'):
             return db == 'auth_db'
         return None
