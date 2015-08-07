@@ -31,6 +31,7 @@ STATICFILES_DIRS = (
 
 # CORS headers
 CORS_ORIGIN_WHITELIST = (
+    'beta.smallslive.com',
     'smallslive.com',
     'herokuapp.com'
 )
