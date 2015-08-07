@@ -112,9 +112,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
+
 STATIC_URL = '/static/'
 
-PING_INTERVAL = 30
+PING_INTERVAL = 30 - 2  # add a little buffer in case client sends too early
 DAILY_LIMIT_PER_MEDIA = 180 * 60  # in seconds
-
-SMALLSLIVE_SITE = 'http://smallslive.herokuapp.com'
+SMALLSLIVE_SITE = 'http://beta.smallslive.com'
