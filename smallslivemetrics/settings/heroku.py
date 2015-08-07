@@ -10,6 +10,9 @@ def env_var(key, default=None):
         val = False
     return val
 
+SECRET_KEY = os.environ.get("SECRET_KEY", "herokudefault")
+
+
 DATABASES['default'] = dj_database_url.config()
 DATABASES['auth_db'] = dj_database_url.config('AUTH_DB_URL')
 
