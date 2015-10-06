@@ -1,1 +1,1 @@
-web: gunicorn smallslivemetrics.wsgi --log-file -
+web: newrelic-admin run-program gunicorn --workers $WEB_CONCURRENCY --preload --max-requests 2000 --timeout 7 --log-file - smallslivemetrics.wsgi
