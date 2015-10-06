@@ -9,5 +9,5 @@ ipython==3.2.1
 psycogreen==1.0
 psycopg2==2.6.1
 six==1.9.0
-git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@fa843ac2c329e7f610e2f5aabbcf9aac386cdbdd#egg=smallslive_metrics_app-0.1.19
+git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@024d6e112181ecf8adf957af0fbd670718eebb81#egg=smallslive_metrics_app-0.1.20
 whitenoise==2.0.2
