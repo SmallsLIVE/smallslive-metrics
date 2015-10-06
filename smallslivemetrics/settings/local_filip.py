@@ -19,6 +19,15 @@ DATABASES = {
     },
 }
 
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS headers
+CORS_ORIGIN_WHITELIST = (
+    'localhost:8000'
+)
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = (
+    'GET',
+    'POST',
+    'OPTIONS'
+)
 
-SMALLSLIVE_SITE = 'http://localhost'
+SMALLSLIVE_SITE = 'http://localhost:8000'

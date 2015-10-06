@@ -109,6 +109,24 @@ USE_L10N = False
 USE_TZ = True
 
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'level': 'DEBUG',
+        },
+    },
+    'loggers': {
+        'metrics': {
+            'handlers': ['console'],
+            'level': 'WARNING',
+        },
+    },
+}
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 # Static asset configuration
@@ -126,3 +144,4 @@ PING_INTERVAL = 30
 PING_INTERVAL_WITH_BUFFER = PING_INTERVAL - 2  # add a little buffer in case client sends too early
 DAILY_LIMIT_PER_MEDIA = 180 * 60  # in seconds
 SMALLSLIVE_SITE = 'https://ssltest.smallslive.com'
+
