@@ -10,5 +10,5 @@ newrelic==2.54.0.41
 psycogreen==1.0
 psycopg2==2.6.1
 six==1.9.0
-git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@1c7370e7181b78e4b70c21b8a2670870c454e09b#egg=smallslive_metrics_app-0.1.24
+git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@9c62ca5b788c45054c8dcaf15e347cc43cbb71cc#egg=smallslive_metrics_app-0.1.25
 whitenoise==2.0.2
