@@ -21,7 +21,10 @@ DATABASES['auth_db'] = dj_database_url.config('AUTH_DB_URL')
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    '.smallslive.com',
+    '.smallslive.com.',
+]
 
 # CORS headers
 CORS_ORIGIN_WHITELIST = (
