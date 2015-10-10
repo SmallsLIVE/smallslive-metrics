@@ -26,8 +26,12 @@ ALLOWED_HOSTS = [
     '.smallslive.com.',
 ]
 
+SMALLSLIVE_SITE = 'https://www.smallslive.com'
+
+
 # CORS headers
 CORS_ORIGIN_WHITELIST = (
+    'www.smallslive.com',
     'beta.smallslive.com',
     'ssltest.smallslive.com',
     'smallslive.com',

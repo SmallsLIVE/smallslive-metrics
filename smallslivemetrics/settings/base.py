@@ -152,5 +152,4 @@ STATIC_URL = '/static/'
 PING_INTERVAL = 30
 PING_INTERVAL_WITH_BUFFER = PING_INTERVAL - 2  # add a little buffer in case client sends too early
 DAILY_LIMIT_PER_MEDIA = 180 * 60  # in seconds
-SMALLSLIVE_SITE = 'https://ssltest.smallslive.com'
 
