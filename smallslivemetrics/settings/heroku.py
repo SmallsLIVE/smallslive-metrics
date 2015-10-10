@@ -43,7 +43,7 @@ CORS_ALLOW_METHODS = (
 # Cache
 redis_url = urlparse.urlparse(get_env_variable('REDIS_URL'))
 CACHEOPS_REDIS = {
-    'host': redis_url.hostname ,
+    'host': redis_url.hostname,
     'port': redis_url.port,
     'db': 1,
     'password': redis_url.password,

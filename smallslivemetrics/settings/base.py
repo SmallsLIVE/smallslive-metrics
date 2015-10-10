@@ -47,6 +47,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     # third party apps
+    'cacheops',
     'corsheaders',
     'django_extensions',
     'rest_framework',
