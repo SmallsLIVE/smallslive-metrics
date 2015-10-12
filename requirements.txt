@@ -4,7 +4,7 @@ django-cors-headers==1.1.0
 django-extensions==1.5.5
 gevent==1.1b1
 gnureadline==6.3.3
-greenlet==0.4.7
+greenlet==0.4.9
 gunicorn==19.3.0
 ipython==3.2.1
 newrelic==2.54.0.41
@@ -12,5 +12,5 @@ psycogreen==1.0
 psycopg2==2.6.1
 raven==5.7.2
 six==1.9.0
-git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@0d0d489c6d1873be6eac95fe4063b3016e14b062#egg=smallslive_metrics_app-0.1.30
-whitenoise==2.0.2
+git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@7b452ab1688339bf0227c41c77656e88c46c1bd7#egg=smallslive_metrics_app-0.1.31
+whitenoise==2.0.4
