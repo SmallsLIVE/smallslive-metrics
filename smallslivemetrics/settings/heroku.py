@@ -18,8 +18,9 @@ INSTALLED_APPS += (
 )
 
 DATABASES['default'] = dj_database_url.config()
-DATABASES['default']['CONN_MAX_AGE'] = 60
+DATABASES['default']['CONN_MAX_AGE'] = 120
 DATABASES['auth_db'] = dj_database_url.config('AUTH_DB_URL')
+DATABASES['auth_db']['CONN_MAX_AGE'] = 120
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
