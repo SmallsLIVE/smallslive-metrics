@@ -10,8 +10,8 @@ gunicorn==19.3.0
 ipython==3.2.1
 newrelic==2.54.0.41
 psycogreen==1.0
-psycopg2==2.6.1
+psycopg2==2.7
 raven==5.7.2
 six==1.9.0
-git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@0e3667868c3c0325e3ce6dcb6b3f5426f532e2d0#egg=smallslive_metrics_app-0.1.39
+git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@6d73f2ad8f8a55a8be29318806ccdc977f0598ab#egg=smallslive_metrics_app-0.1.39
 whitenoise==2.0.4
