@@ -13,5 +13,5 @@ psycogreen==1.0
 psycopg2==2.7
 raven==5.7.2
 six==1.9.0
-git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@6d73f2ad8f8a55a8be29318806ccdc977f0598ab
+git+https://github.com/SmallsLIVE/smallslive-metrics-djangoapp.git@ed4fc57c31b8f457e513545beea1500f943e43a4
 whitenoise==2.0.4
