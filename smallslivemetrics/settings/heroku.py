@@ -1,3 +1,4 @@
+import ast
 import urlparse
 import dj_database_url
 from .base import *
@@ -48,6 +49,9 @@ CORS_ALLOW_METHODS = (
     'POST',
     'OPTIONS'
 )
+
+# Add this so staging can be configured without limitations.
+CORS_ORIGIN_ALLOW_ALL = ast.literal_eval(os.environ.get('CORS_ORIGIN_ALLOW_ALL', 'False'))
 
 # Cache
 redis_url = urlparse.urlparse(get_env_variable('REDIS_URL'))
