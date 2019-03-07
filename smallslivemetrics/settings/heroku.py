@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
 
 ALLOWED_HOSTS = ast.literal_eval(os.environ.get('ALLOWED_HOSTS', '[]')) or ALLOWED_HOSTS
 
-SMALLSLIVE_SITE = 'https://www.smallslive.com'
+SMALLSLIVE_SITE = os.environ.get('SMALLSLIVE_SITE', 'https://www.smallslive.com')
 
 
 # CORS headers
