@@ -32,6 +32,8 @@ ALLOWED_HOSTS = [
     '.smallslive.com.',
 ]
 
+ALLOWED_HOSTS = ast.literal_eval(os.environ.get('ALLOWED_HOSTS', '[]')) or ALLOWED_HOSTS
+
 SMALLSLIVE_SITE = 'https://www.smallslive.com'
 
 
