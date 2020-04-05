@@ -6,7 +6,7 @@ django-extensions==1.5.5
 gevent==1.1b1
 gnureadline==6.3.3
 greenlet==0.4.9
-gunicorn==19.3.0
+gunicorn==19.5.0
 ipython==3.2.1
 newrelic==2.54.0.41
 psycogreen==1.0
